@@ -1,0 +1,63 @@
+<!--The hub contains a login screen and a link to the contact form in lessons.html-->
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../mainsheet.css">
+
+<body>
+    <ul> <!--Navbar again-->
+        <li style="float:right"><a class="active" href="hub.html">Online Hub</a></li>
+        <li><a href="../mainfile.html">Home</a></li>
+        <li><a href="menu_page/menu.html">Menu</a></li>
+        <li><a href="booking_page/lessons.html">Bookings</a></li>
+        <li><a href="../about_page/about.html">About</a></li>
+        
+    </ul>
+
+    <div class="header"> <!--Header-->
+        <h1>Welcome to the Online Hub!</h1>
+        <h2>Please choose an option below.</h2>
+    </div>
+
+    <style> 
+        .row {
+            text-align: center;
+        }
+
+    </style> <!--Styling used outside of the css document. This was used to modify the "row" class and override the css document-->
+
+    <div class="row">
+        <div class="main">
+            <h1>Login</h1>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required> <!--This functions similarly to the form in lessons.html-->
+
+            <label for="psw"><b>Password</b></label> <br>
+            <input type="text" placeholder="Enter Password" name="psw" required> <!--Code referenced within document-->
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me <!--Remember me checkbox-->
+            </label>
+
+
+
+
+        </div>
+        <div class="side">
+            <h1>Book a Bakery Lesson</h1> <br> <br>
+            <a href="booking_page/lessons.html" class="mybutton orderbutton">ORDER NOW!</a> <!--Orderbutton class reused for another button-->
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h5>Website created by Mantis Solutions™ </h5>
+
+    </div>
+</body>
+
+<!--All code referenced in document-->

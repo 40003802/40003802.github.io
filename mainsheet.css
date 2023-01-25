@@ -1,0 +1,266 @@
+/* css stylesheet for website */ 
+
+/* This stylesheet is the largest single file with around 250 lines. Without it, the website would not look very good! */
+
+body, html {
+    height: 100%;
+    max-width: 100%;
+    background-image: url("gallery/coffee_Back.jpg");
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+} /* This is used to set the background, font and margin for the entire website*/
+
+.parallax {
+    background-image: url("gallery/coffee_Back.jpg");
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+} /* This section was not used in the website, as at the end, I decided not to use it. I have left it in in case I change my mind in the future*/
+/* Parallax is used to change image behaviour while scrolling*/
+
+.orderbutton {
+    text-align: center;
+    size: 150px;
+    padding: 16px 32px;
+} /* The styling used for the 2 buttons on the website*/
+
+.orderbutton:hover {
+    size-adjust: 125%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:sienna;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 2px solid grey;
+    display:block
+
+} /* Styling used for the whole list in the navbar*/
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+    display: inline;
+    
+} /* Styling used for the individual list elements*/
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+} /* Styling used for the text within the list elements*/
+
+li a:hover {
+    background-color: green;
+} /* Hover effects*/
+
+li:last-child{
+    border-right: none;
+} /* Styling for element at the end of list*/
+
+.active {
+    background-color: bisque;
+    color: black;
+} /* The active list element*/
+
+.header {
+    padding: 100px;
+    text-align: center;
+    color: white;
+    background: rgba(7, 131, 44, 0.507); /* The translucent green seen on each page*/
+} /* Styling for the header*/
+
+* {
+    box-sizing: border-box;
+  } /* Border box styling*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+} /* Styling for the row class*/
+
+.side {
+    flex: 50%; /* Half the width of the screen*/
+    background-color: #f1f1f1;
+    padding: 20px; /* Padding is like a border around the element*/
+} /* Styling for the side class*/
+
+.main {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+} /* Styling for the main class*/
+
+.banner {
+    background-color: azure;
+    padding: 3px;
+    flex: 100%;
+} /* Styling for the banner class*/
+
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+} /* Media queries for mobile phones, it changes the positioning of elements*/
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+} /* Same as the above, except it changes the navbar*/
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #ddd;
+} /* Styling for the footer class*/
+
+.mybutton {
+    border: 1px solid #ccc;
+    background-color: #dedede;
+    text-decoration: none;
+    border-radius: 70px;
+    size: 200%;
+} /* More button styling*/
+
+.menu {
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+    border: 1px #dedede;
+    font-size: medium;
+    background-color: #f1f1f1;
+    text-align: center;
+} /* Styling for the menu found on menu.html*/
+    
+.menuHeading {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center; /* Aligns text to center*/
+    font-size: larger;
+} /* Styling for the menu heading*/
+
+.biggerText {
+    font-size: 200%;
+} /* I used this once to increase the font size to twice the original size*/
+
+.menuRow {
+    flex: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+} /* Styling for the rows on the menu*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+} /* Styling for the text area found within the contact form found on lessons.html*/
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+} /* Label styling*/
+
+input[type=submit] {
+    background-color: #dedede;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+} /* Styling for the submit button found on the contact from*/
+
+input[type=submit]:hover {
+    background-color: beige;
+} /* Hover effects for the button*/
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+} /* Container styling, not used*/
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+} /* 25% width column*/
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px; /* Margin only found on the top*/
+} /* 75% width column*/
+  
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} /* Row class styling*/
+
+.basket {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    float: right;
+} /* Styling for the basket icon to change the size of the image*/
+
+.basket:hover {
+    cursor:pointer;
+} /* Makes the cursor point when hovered over*/
+
+
+.slideshow { /* Styling below was found online, I have referenced it as required*/
+    width:600px; 
+    height:500px; 
+    overflow:hidden; 
+    position:relative; 
+} /* Slideshow styling*/
+
+.slideshow img { 
+    position:absolute; 
+    animation:slideshow 20s infinite; 
+    opacity:0; 
+    width: 100%; 
+    height: auto;
+} /* Styling for the slideshow images along with the animation duration*/
+
+@keyframes slideshow {
+    25% {
+        opacity:1;
+    } 
+    40% {
+        opacity:0;
+    }
+} /* Slideshow opacity keyframes*/
+
+.slideshow img:nth-child(4){
+    animation-delay:0s;
+} /* First image delay, every 5 seconds the image changes*/
+.slideshow img:nth-child(3){
+    animation-delay:5s;
+}
+
+.slideshow img:nth-child(2){
+    animation-delay:10s;
+}
+
+.slideshow img:nth-child(1){
+    animation-delay:15s;
+}

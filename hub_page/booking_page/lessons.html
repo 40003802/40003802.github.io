@@ -1,0 +1,81 @@
+<!--This page contains a contact form for booking a table or for enquiring about baking lessons-->
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../mainsheet.css">
+
+<body>
+    <ul> <!--Navbar again-->
+        <li style="float:right"><a class="active" href="lessons.html">Bookings</a></li>
+        <li><a href="../../mainfile.html">Home</a></li>
+        <li><a href="../hub.html">Online Hub</a></li>
+        <li><a href="../menu_page/menu.html">Menu</a></li>
+        <li><a href="../../about_page/about.html">About</a></li>
+    </ul>
+
+
+    <div class="header">
+      <h3>In the Subject box, please mention whether you want either: Baking Lessons, Table Booking or to Preorder an item.</h3>
+    </div>
+
+      <!--The majority of the code below was taken from w3schools, and I have modified it to fit my website better. 
+        A full list of referenced code can be found at the bottom of the attached document.
+        I have commented each line to show my understanding of the code.-->
+
+    <div class="container">
+
+        
+        <form action="booking.php"> <!--This line is used in preparation for php form handling-->
+        
+        <div class="row"> <!--Reuses the row class from the main page-->
+            <div class="col-25"> <!--Column with 25% width-->
+              <label for="fname">Full Name</label> <!--Label for name-->
+            </div>
+            <div class="col-75"> <!--Column with 75% width-->
+              <input type="text" id="fname" name="fullname" placeholder="Your name.."> <!--Space to input name-->
+            </div>
+        </div> <!--This is repeated a few times throught the form-->
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email Address</label>
+                </div>
+            <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Your email..">
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="location">Location</label>
+                </div>
+            <div class="col-75">
+                <select id="location" name="location"> <!--Selection box with the 3 branch locations to choose from-->
+                    <option value="harrogate">Harrogate</option>
+                    <option value="leeds">Leeds</option>
+                    <option value="knaresborough">Knaresborough</option>
+                </select>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Request baking lessons, or book a table.." style="height:200px"></textarea> <!--Text box-->
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit"> <!--Submit button-->
+        </div>
+        </form>
+    </div>
+    <div class="footer">
+        <h5>Website created by Mantis Solutions™ </h5>
+
+    </div>
+
+      
+</body>

@@ -1,0 +1,95 @@
+<!--This is my website for the coffee shop "Bean and Brew". I have left comments throught the files to show what each part does-->
+<!--This file is the main page of the website, containing the navbar, reviews, an order button and a slideshow of images-->
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mainsheet.css"> <!--These lines are used in each file to declare it a HTML file and also to link the stylesheet-->
+<body>
+
+    <ul> <!--Navbar-->
+        <li style="float:right"><a class="active" href="#home">Home</a></li> <!--Floats the active page to the right-->
+        <li><a href="hub_page/hub.html">Online Hub</a></li>
+        <li><a href="hub_page/menu_page/menu.html">Menu</a></li>
+        <li><a href="hub_page/booking_page/lessons.html">Bookings</a></li>
+        <li><a href="about_page/about.html">About</a></li>
+    </ul>
+
+    <div class="header"> <!--The main header found within the translucent green background-->
+        <h1>Bean and Brew</h1>
+        <p>A coffee shop</p>
+    </div>
+
+    <div class="row"> <!--The class "row" has been used a few times throughout the website to split the page in half-->
+        <div class="side"> <!--The class "side" is the row found on the left hand portion of the screen-->
+            <h2>Welcome to Bean and Brew </h2>
+            <h5>We are a small coffee shop chain with stores across
+                Yorkshire and Northumberland. Head to our about page
+                to find out more about our company and its history.
+            </h5>
+            
+            </div> 
+
+        <div class="main"> <!--The class "main" is used here for the Order Button-->
+            <h1>Click the button below to Order!</h1>
+
+            <a href="hub_page/menu_page/menu.html" class="mybutton orderbutton">ORDER NOW!</a> <!--The button takes you to the menu-->
+        </div>
+
+    </div>
+
+
+    <div class="banner"> <!--I used my "banner" class to separate the sections of the site-->
+    
+    </div>
+
+    <div class="row">
+
+        <div class="side">
+            <h1><u>Our Food</u></h1>
+            
+            <div class="slideshow"> <!--Slideshow (code referenced in the document)-->
+                <img src="gallery/hot-choc.jpg" alt="Slide 4" />
+
+                <img src="gallery/hamper.jpg" alt="Slide 3" />
+              
+                <img src="gallery/cake.jpg" alt="Slide 2" />
+              
+                <img src="gallery/coffee_cup.jpg" alt="Slide 1" />
+            </div>
+        </div>
+
+        <div class="main"> <!--Reviews: They are mostly made up to show as an example-->
+            <h1>Reviews</h1>
+            <h2>Tom says: </h2> 
+            <h3> I visited Bean and Brew last month, and I can say that the whole experience
+                was positive.
+            </h3>
+
+            <h2>Bean says: </h2>
+            <h3> Bean and Brew is a lovely company. I love beans.
+
+            </h3>
+
+            <h2>Alec says: </h2>
+            <h3> It's the most website.
+
+            </h3>
+            
+            <h2>Josh says: </h2>
+            <h3> Nice website, I like it. 
+                
+            </h3>
+        </div>
+
+        
+    </div>
+    
+    <div class="footer"> <!--Mantis Solutions is the name of our "company" given to us within the original brief for the projects-->
+        <h5> Website created by Mantis Solutions™</h5>
+    </div>
+
+    
+</body>
+</html>
